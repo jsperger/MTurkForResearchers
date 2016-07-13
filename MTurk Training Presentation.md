@@ -29,15 +29,21 @@ Probably don't believe that there's actually another participant
 
 ---
 
+# Cost of an MTurk HIT
+
+
+
+---
+
 # Creating a New HIT
 
-.image-50[![Create New Project](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Create%20New%20Project.png)]
+.image-75[![Create New Project](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Create%20New%20Project.png)]
 
 ---
 
 # New Project - Survey Link
 
-.image-50[![New Project - Survey Link](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/New%20Project%20-%20Survey%20Link.png)]
+.image-75[![New Project - Survey Link](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/New%20Project%20-%20Survey%20Link.png)]
 
 ---
 
@@ -68,7 +74,7 @@ Rule of Thumb: If a study is five minutes or less don't give a range.
 
 # Components of a HIT - The Set Up
 
-![HIT Set Up](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Set%20Up.png)
+.image-50[![HIT Set Up](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Set%20Up.png)]
 * Reward per assignment
  * MTurk standard is 10 cents/minute which works out to $6.00/hour
  * We should do better - The federal minimum wage is $7.25/hour
@@ -80,7 +86,7 @@ Rule of Thumb: If a study is five minutes or less don't give a range.
 
 # Components of a HIT - Worker Requirements
 
-![Worker Requirements](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Worker%20Requirements.png)
+.image-50[![Worker Requirements](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Worker%20Requirements.png)]
 
 * Master Workers - costs extra money and is basically useless provided you use sensible worker qualifications
 
@@ -202,7 +208,7 @@ While purely anecdotal evidence, I've noticed that some of the workers who submi
 
 [Amazon Mechanical Turk - Getting Started Guide for API](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkGettingStartedGuide/Welcome.html)
 
-[Turkopticon](https://turkopticon.ucsd.edu/)
+[Turkopticon](https://turkopticon.ucsd.edu/) - Requester Reviews 
 
 [Guidelines for Academic Requesters](http://wiki.wearedynamo.org/index.php/Guidelines_for_Academic_Requesters) - Useful guidelines for being a good academic requester. 
 
@@ -219,6 +225,11 @@ Chandler, J., Mueller, P., & Paolacci, G. (2014). Nonnaïveté among Amazon Mech
 Crump, M. J., McDonnell, J. V., & Gureckis, T. M. (2013). Evaluating Amazon's Mechanical Turk as a tool for experimental behavioral research. PloS one, 8(3), e57410.
 
 Ho, C. J., Slivkins, A., Suri, S., & Vaughan, J. W. (2015, May). Incentivizing high quality crowdwork. In Proceedings of the 24th International Conference on World Wide Web (pp. 419-429). ACM.	
+
+---
+
+# Academic Citations Continued
+
 
 Ipeirotis, Panagiotis G., Demographics of Mechanical Turk (March 2010). NYU Working Paper No. ;CEDER-10-01. Available at SSRN: http://ssrn.com/abstract=1585030
 
