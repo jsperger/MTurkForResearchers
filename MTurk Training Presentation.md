@@ -29,6 +29,12 @@ Probably don't believe that there's actually another participant
 
 ---
 
+Test
+![Test](/Images/Create_from_existing_Project.png)
+
+---
+
+
 # Creating a New HIT
 
 .image-50[![Create New Project](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Create%20New%20Project.png)]
@@ -37,13 +43,13 @@ Probably don't believe that there's actually another participant
 
 # New Project - Survey Link
 
-![New Project - Survey Link](/Images/New\ Project\ -\ Survey\ Link.png)
+![New Project - Survey Link](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/New%20Project%20-%20Survey%20Link.png)
 
 ---
 
 # Components of a HIT - Description
 
-![Mturk Hit Description Example](/Images/HIT\ Description.png)
+![Mturk Hit Description Example](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Description.png)
 
 * Title - The title alone is what workers first see when looking for HITs; sentences instead of single words are the standard
  * Typically you should include the estimated time to complete in the title of the HIT
@@ -68,7 +74,7 @@ Rule of Thumb: If a study is five minutes or less don't give a range.
 
 # Components of a HIT - The Set Up
 
-![HIT Set Up](/Images/HIT\ Set\ Up.png)
+![HIT Set Up](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Set%20Up.png)
 * Reward per assignment
  * MTurk standard is 10 cents/minute which works out to $6.00/hour
  * We should do better - The federal minimum wage is $7.25/hour
