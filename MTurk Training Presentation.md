@@ -31,7 +31,7 @@ Probably don't believe that there's actually another participant
 
 # Creating a New HIT
 
-.image-50[[Create New Project](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Create%20New%20Project.png)]
+.image-50[![Create New Project](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Create%20New%20Project.png)]
 
 ---
 
