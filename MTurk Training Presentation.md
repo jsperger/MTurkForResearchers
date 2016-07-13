@@ -23,9 +23,15 @@ The Concerns
 
 ---
 
+# Mechanical Turk Workers (MTurkers)
+
+Probably don't believe that there's actually another participant 
+
+---
+
 # Creating a New HIT
 
-![Create New Project](/Images/Create\ New\ Project.png)
+![Create New Project](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Create%20New%20Project.png)
 
 ---
 
