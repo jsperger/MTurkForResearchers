@@ -29,12 +29,6 @@ Probably don't believe that there's actually another participant
 
 ---
 
-Test
-![Test](/Images/Create_from_existing_Project.png)
-
----
-
-
 # Creating a New HIT
 
 .image-50[![Create New Project](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Create%20New%20Project.png)]
@@ -43,13 +37,13 @@ Test
 
 # New Project - Survey Link
 
-![New Project - Survey Link](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/New%20Project%20-%20Survey%20Link.png)
+.image-50[![New Project - Survey Link](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/New%20Project%20-%20Survey%20Link.png)]
 
 ---
 
 # Components of a HIT - Description
 
-![Mturk Hit Description Example](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Description.png)
+.image-50[![Mturk Hit Description Example](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Description.png)]
 
 * Title - The title alone is what workers first see when looking for HITs; sentences instead of single words are the standard
  * Typically you should include the estimated time to complete in the title of the HIT
@@ -86,7 +80,7 @@ Rule of Thumb: If a study is five minutes or less don't give a range.
 
 # Components of a HIT - Worker Requirements
 
-![Worker Requirements](/Images/Worker\ Requirements.png)
+![Worker Requirements](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Worker%20Requirements.png)
 
 * Master Workers - costs extra money and is basically useless provided you use sensible worker qualifications
 
