@@ -210,5 +210,5 @@ While purely anecdotal evidence, I've noticed that some of the workers who submi
 
 # Academic Papers on Mechanical Turk
 
-Mason, W., & Suri, S. (2012). Conducting behavioral research on Amazon’s Mechanical Turk. Behavior Research Methods, 44(1), 1-23. Retrieved from http://www.ncbi.nlm.nih.gov/pubmed/21717266\nhttp://www.springerlink.com/index/10.3758/s13428-011-0124-6
-
+Mason, W., & Suri, S. (2012). Conducting behavioral research on Amazon’s Mechanical Turk. Behavior Research Methods, 44(1), 1-23. Retrieved from 
+http://link.springer.com/article/10.3758%2Fs13428-011-0124-6
