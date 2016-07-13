@@ -208,7 +208,25 @@ While purely anecdotal evidence, I've noticed that some of the workers who submi
 
 ---
 
-# Academic Papers on Mechanical Turk
+# Academic Papers on Mechanical Turk, An Incomplete List 
+
+Berinsky, A. J., Huber, G. A., & Lenz, G. S. (2012). Evaluating online labor markets for experimental research: Amazon. com's Mechanical Turk. Political Analysis, 20(3), 351-368.
+
+Buhrmester, M., Kwang, T., & Gosling, S. D. (2011). Amazon's Mechanical Turk a new source of inexpensive, yet high-quality, data?. Perspectives on psychological science, 6(1), 3-5.
+
+Chandler, J., Mueller, P., & Paolacci, G. (2014). Nonnaïveté among Amazon Mechanical Turk workers: Consequences and solutions for behavioral researchers. Behavior research methods, 46(1), 112-130.
+
+Crump, M. J., McDonnell, J. V., & Gureckis, T. M. (2013). Evaluating Amazon's Mechanical Turk as a tool for experimental behavioral research. PloS one, 8(3), e57410.
+
+Ho, C. J., Slivkins, A., Suri, S., & Vaughan, J. W. (2015, May). Incentivizing high quality crowdwork. In Proceedings of the 24th International Conference on World Wide Web (pp. 419-429). ACM.	
+
+Ipeirotis, Panagiotis G., Demographics of Mechanical Turk (March 2010). NYU Working Paper No. ;CEDER-10-01. Available at SSRN: http://ssrn.com/abstract=1585030
 
 Mason, W., & Suri, S. (2012). Conducting behavioral research on Amazon’s Mechanical Turk. Behavior Research Methods, 44(1), 1-23. Retrieved from 
 http://link.springer.com/article/10.3758%2Fs13428-011-0124-6
+
+Paolacci, G., Chandler, J., & Ipeirotis, P. G. (2010). Running experiments on amazon mechanical turk. Judgment and Decision making, 5(5), 411-419.
+
+Paolacci, G., & Chandler, J. (2014). Inside the turk understanding mechanical turk as a participant pool. Current Directions in Psychological Science, 23(3), 184-188.
+
+Suri, S., & Watts, D. J. (2011). Cooperation and contagion in web-based, networked public goods experiments. PLoS One, 6(3), e16836.
