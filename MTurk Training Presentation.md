@@ -37,7 +37,7 @@ The Concerns
 
 # Components of a HIT - Description
 
-![Mturk Hit Description Example](/Images/"HIT Description.png")
+![Mturk Hit Description Example](/Images/"HIT Description".png)
 
 * Title - The title alone is what workers first see when looking for HITs; sentences instead of single words are the standard
  * Typically you should include the estimated time to complete in the title of the HIT
