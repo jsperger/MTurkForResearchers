@@ -41,7 +41,7 @@ The typical MTurk study is generally shorter and less complex than a lab study, 
 
 * It's cheap - the going rate for survey responses on Mechanical Turk is $6/hr or 10 cents per minute (more on this later)
 
-* Mechanical Turk will give you a more demographically diverse study than the lab
+* Mechanical Turk will give you a more demographically diverse sample than the lab. You can also restrict your sample to certain geographic regions
 
 * Workers on Mechanical Turk (MTurkers for short) seem to be at least as attentive as lab participants, if not more so, according to research done directly comparing attentiveness of MTurkers and lab participants
 
@@ -58,7 +58,7 @@ Requesters are not anonymous. Workers post reviews of requesters on forums and R
 Professional Participant Pool. While nonnaïveté is also a problem for lab studies, a sizeable minority of MTurkers use MTurk as their primary source of income. This is doubly true when you add qualifications that workers have already completed X surveys. 
 * Deception isn't as likely to work
 
-There is cross-talk between participants. Usually the discussion is general and more about what studies are high paying and which requesters rather than the details of a study, and on MTurk forums there are norms that participants shouldn't talk about study manipulations. 
+There is cross-talk between participants. Usually the discussion is general and more about what studies and requesters are high paying rather than the details of a study, and on MTurk forums there are community norms that participants shouldn't talk about study manipulations. 
  * If you have a study that's annoying or pays poorly for the effort involved participants will probably post about it. 
 
 ---
@@ -101,6 +101,7 @@ Providing accurate time estimates is one of the most important things you can do
 
 * The average worker on Mechanical Turk probably reads more slowly than you do
 * Keep in mind that you've seen your study materials before. Even if you try to read carefully you'll probably still end up skimming if you try to estimate the completion time for your own study
+* Try asking a friend or someone in your lab group to give you a time estimate (This is also a good way to get feedback in general)
 
 For short studies try to avoid giving a range of times. A "1-3 Minute Study" which pays fifteen cents could correspond to hourly wages of $9.00/hr, $4.50/hr, or $3.00/hr.
 
@@ -137,8 +138,6 @@ Imagine you're running a study where you'll collect 100 responses for a five min
 
 Master Workers - costs extra money and is basically useless provided you use sensible worker qualifications
 
-Standard qualifications - 95% approval, Greater than 100 HITs Approved, Location is United States
-
 Additional Qualifications - You can create your own qualifications and assign them to workers. This is very powerful. 
 * You can screen out participants who have taken similar studies you have launched before
 
@@ -149,7 +148,7 @@ Additional Qualifications - You can create your own qualifications and assign th
 There are two main options for confirming that workers actually completed your survey
 
 Payment Code - At the end of the survey give participants a payment code to enter in the text box when they submit the HIT on MTurk
-* Easiest to set up
+* Easy to set up
 * Errors - people accidentally submit the HIT before completing the survey or enter the wrong completion code (overall low error rate though)
 * You can combine this with bonuses to create incentivized studies
 
@@ -186,7 +185,6 @@ Respond to messages from participants
 
 Be considerate when designing surveys
 * Be cognizant of effort intensive tasks. A five minute survey which is actually five minutes of essay writing will make participants justifiably frustrated if you don't tell them up front
-* If your 
 
 
 ---
