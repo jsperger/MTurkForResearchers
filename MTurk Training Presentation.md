@@ -49,39 +49,15 @@ Mechanical Turk is very popular with researchers in psychology because you can q
 
 # Mechanical Turk is Different than the Lab
 
----
+You can't see what MTurkers are doing when they complete your survey. 
 
-# What does research say about Mechanical Turk as a participant pool?
+Requesters are not anonymous. Workers post reviews of requesters on forums and Reddit, and there is a browser plugin called TurkOpticon which overlays the requester's ratings onto MTurk. Maintaining a good rating helps you get high quality responses quickly. 
 
-The Good
-* Inexpensive source of high quality data. Mechanical Turk Participants seem to be at least as attentive as lab participants. 
-* Papers with studies run on Mechanical Turk are widely accepted
-* Workers want to do a good job 
- *  This past spring someone in the departmetn ran an experiment where participants were paid up front for a two part study. 
- 
-The Concerns
-* There is cross-talk between participants
- * Usually don't reveal manipulations, the discussion is more about what studies are high paying and which requesters are good. However if you have a manipulation that would be considered annoying participants might discuss it with each other. 
-* Professional Participant Pool. While nonnaïveté is also a problem for lab studies, a sizeable minority of MTurkers use MTurk as their primary source of income
- * This isn't really different from lab studies 
+Professional Participant Pool. While nonnaïveté is also a problem for lab studies, a sizeable minority of MTurkers use MTurk as their primary source of income. This is doubly true when you add qualifications that workers have already completed X surveys. 
+* Deception isn't as likely to work
 
----
-
-# Key Things to Keep in Mind
-
-At the end of the day Mechanical Turk more closely resembles a job board than a survey panel. 
-
-* You are not anonymous - Workers post reviews of requesters 
-
-* Many respondents are professional survey takers. This is doubly true when you add qualifications that workers have already completed X surveys. 
-
-
-
----
-
-# Mechanical Turk Workers (MTurkers)
-
-Probably don't believe that there's actually another participant 
+There is cross-talk between participants. Usually the discussion is general and more about what studies are high paying and which requesters rather than the details of a study, and on MTurk forums there are norms that participants shouldn't talk about study manipulations. 
+ * If you have a study that's annoying or pays poorly for the effort involved participants will probably post about it. 
 
 ---
 
@@ -286,11 +262,12 @@ Caveats:
 # Attention & Comprehension Checks
 
 Some research has shown that with the standard quality qualifications on MTurk Attention checks aren't really necessary. 
-If you do use them, be aware that every participant on Mechanical Turk has seen the standard attention checks many, many times
+* If you do use them, be aware that every participant on Mechanical Turk has seen the standard attention checks many, many times
 
 Comprehension Checks
-If you are going to screen out participants on Qualtrics make sure you give them instructions to return the HIT
-Make sure the 
+* If you are going to screen out participants on Qualtrics make sure you give them instructions to return the HIT. Do not collect additional data from participants if you're not paying them
+* Make sure the comprehension checks are as early as possible, or still collect the survey response and pay participants who fail comprehension checks. 
+
 Because of the nature of Mechanical Turk it is very easy to tell yourself stories about what participants who didn't behave the way you wanted must've been thinking. You should pre-register your analysis plan including exclusions (shout out to Professors Simmons and Simonsohn)
 
 ---
@@ -312,8 +289,6 @@ What Not To Do
 
 ---
 
----
-
 # Consider Interesting Uses of MTurk 
 
 Consider creative uses of Mechanical Turk instead of viewing it just as an inexpensive way to get high N studies
@@ -322,13 +297,6 @@ Example:
 Siddharth Suri & Duncan J. Watts - "Cooperation and Contagion in Web-Based, Networked Public Goods Experiments"
 Suri and Watts paper ran 113 experiments where they varied network structure to study cooperation and contagion. This type of research wouldn't be feasible in a lab. 
 
-
----
-
-# Final Take Aways
-
-
-Remember that participants review requesters. Maintaining a good reputation is important for getting high quality responses quickly 
 
 ---
 
