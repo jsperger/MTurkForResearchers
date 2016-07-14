@@ -28,7 +28,9 @@ class: center, middle
 Mechanical Turk is an online crowd sourcing platform created by Amazon. The site acts like a job board - Requesters can post jobs (Human Intelligence Tasks or HITs in MTurk parlance) which can be completed by Workers. 
 
 
-Mechanical Turk is very popular with researchers in psychology because you can quickly collect survey responses for a low cost. Two of the most common use cases are pilot testing studies and study components and running high powered studies. The typical MTurk study is generally shorter and less complex than a lab study, though this isn't necessary to get good data. 
+Mechanical Turk is very popular with researchers in psychology because you can quickly collect survey responses for a low cost. Two of the most common use cases are pilot testing studies and study components and running high powered studies. 
+
+The typical MTurk study is generally shorter and less complex than a lab study, but you can run longer and more complex studies and still get great data. 
 
 
 ---
@@ -248,11 +250,14 @@ Options for using the API are: Command Line Tools (not recommended), The MTurkR 
 
 # Bonuses
 
-This is a great way to run experiments where participants are incentivized. The existing research has shown that MTurkers respond positively to incentives. 
+This is a great way to run experiments where participants are incentivized. The existing research has shown that MTurkers respond positively to incentives. There are two common ways to gran bonuses: performance based bonuses and bonus lotteries. 
 
-A simple way to implement incentives is to give participants different completion codes based on their performance. 
+For performance based bonuses a simple way to implement incentives is to give participants different completion codes based on their performance
+
+Bonus lotteries are a good way to increase the stakes of an experiment, and can be combined with performance based incentives by giving lottery tickets based on performance. 
 
 Caveats:
+* Make sure that the base pay is still fair if you're using a bonus lottery.
 * If bonuses are high and the task lends itself to Googling for an answer don't be surprised if people cheat.
 * Some people don't like bonuses if the questions or tasks to get the bonus are too difficult 
 
@@ -294,7 +299,7 @@ Consider creative uses of Mechanical Turk instead of viewing it just as an inexp
 
 Example:
 Siddharth Suri & Duncan J. Watts - "Cooperation and Contagion in Web-Based, Networked Public Goods Experiments"
-Suri and Watts paper ran 113 experiments where they varied network structure to study cooperation and contagion. This type of research wouldn't be feasible in a lab. 
+Suri and Watts ran 113 experiments where they varied network structure to study cooperation and contagion. This type of research wouldn't be feasible in a lab. 
 
 
 ---
