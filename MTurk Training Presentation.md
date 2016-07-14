@@ -139,7 +139,6 @@ Imagine you're running a study where you'll collect 100 responses for a five min
 Master Workers - costs extra money and is basically useless provided you use sensible worker qualifications
 
 Additional Qualifications - You can create your own qualifications and assign them to workers. This is very powerful. 
-* You can screen out participants who have taken similar studies you have launched before
 
 ---
 
