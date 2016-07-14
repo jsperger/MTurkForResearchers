@@ -1,9 +1,51 @@
+class: center, middle
+
+# An Introduction to Mechanical Turk for Survey Research 
+### John Sperger
+### July 14, 2016
+
+---
+
+# Agenda
+
+1. What is Mechanical Turk and why use it? 
+2. How to Post a Study on Mechanical Turk and Basic Considerations
+3. Being a Responsible Requester 
+4. Intermediate MTurking - Designing Studies for Mechanical Turk and the MTurk API
+
+---
+
+class: center, middle
+
+# What is Mechanical Turk and why use it? 
+
+---
+
 # What is Mechanical Turk (MTurk)?
 
-Mechanical Turk is an online crowd sourcing platform created by Amazon. The site acts like a job board - Requesters can post jobs (Human Intelligence Tasks in MTurk parlance) which can be completed by Workers. 
+Mechanical Turk is an online crowd sourcing platform created by Amazon. The site acts like a job board - Requesters can post jobs (Human Intelligence Tasks or HITs in MTurk parlance) which can be completed by Workers. 
 
 
-Mechanical Turk is very popular with researchers in psychology because you can quickly collect survey responses for a low cost. Two of the most common use cases are pilot testing studies and study components and running high powered studies. The typical MTurk study is generally shorter and less complex than a lab study (though not necessarily true). 
+Mechanical Turk is very popular with researchers in psychology because you can quickly collect survey responses for a low cost. Two of the most common use cases are pilot testing studies and study components and running high powered studies. The typical MTurk study is generally shorter and less complex than a lab study, though this isn't necessary to get good data. 
+
+
+---
+
+# Why Use Mechanical Turk?
+
+* It's quick - Collecting thousands of responses can take less than a day
+
+* It's cheap - the going rate for survey responses on Mechanical Turk is $6/hr or 10 cents per minute (more on this later)
+
+* Mechanical Turk will give you a more demographically diverse study than the lab
+
+* Workers on Mechanical Turk (MTurkers for short) seem to be at least as attentive as lab participants, if not more so, according to research done directly comparing attentiveness of MTurkers and lab participants
+
+* MTurk studies are widely accepted and you can find them in all journals including top tier journals
+
+---
+
+# Mechanical Turk is Different than the Lab
 
 ---
 
@@ -18,8 +60,20 @@ The Good
 The Concerns
 * There is cross-talk between participants
  * Usually don't reveal manipulations, the discussion is more about what studies are high paying and which requesters are good. However if you have a manipulation that would be considered annoying participants might discuss it with each other. 
-* Professional Participant Pool
+* Professional Participant Pool. While nonnaïveté is also a problem for lab studies, a sizeable minority of MTurkers use MTurk as their primary source of income
  * This isn't really different from lab studies 
+
+---
+
+# Key Things to Keep in Mind
+
+At the end of the day Mechanical Turk more closely resembles a job board than a survey panel. 
+
+* You are not anonymous - Workers post reviews of requesters 
+
+* Many respondents are professional survey takers. This is doubly true when you add qualifications that workers have already completed X surveys. 
+
+
 
 ---
 
@@ -29,9 +83,9 @@ Probably don't believe that there's actually another participant
 
 ---
 
-# Cost of an MTurk HIT
+class: center, middle
 
-
+# Posting a HIT on Mechanical Turk and Basic Considerations
 
 ---
 
@@ -59,12 +113,12 @@ Probably don't believe that there's actually another participant
 
 ---
 
-# A Brief Note on Time Estimates
+# Providing Good Time Estimates
 
 Providing accurate time estimates is one of the most important things you can do as a requester. 
 
-* The average worker on Mechanical Turk probably reads more slowly than you
-* Keep in mind that you've seen your study materials before. Even if you try to read carefully you'll probably still end up skimming if you try to estimate the completion time for your own study. 
+* The average worker on Mechanical Turk probably reads more slowly than you do
+* Keep in mind that you've seen your study materials before. Even if you try to read carefully you'll probably still end up skimming if you try to estimate the completion time for your own study
 
 For short studies try to avoid giving a range of times. A "1-3 Minute Study" which pays fifteen cents could correspond to hourly wages of $9.00/hr, $4.50/hr, or $3.00/hr.
 
@@ -77,10 +131,23 @@ Rule of Thumb: If a study is five minutes or less don't give a range.
 .image-50[![HIT Set Up](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Set%20Up.png)]
 * Reward per assignment
  * MTurk standard is 10 cents/minute which works out to $6.00/hour
- * We should do better - The federal minimum wage is $7.25/hour
+ * We should do better - The Behavioral Lab pays participants $10/hr. The federal minimum wage is $7.25/hour . Paying less means you're more likely to get an economically vulnerbale segment of the population, and the costs are still significantly lower than other alternatives for collecting survey responses. 
+ * You'll get responses more quickly with higher pay, and past studies have found that higher base pay also increases response quality
  
-* Number of assignments per HIT 
 * Time alloted per assignment - this is *not* how long your HIT takes to complete. This is how long a worker has to complete the HIT before Amazon automatically prevents the worker from submitting the HIT and allows another worker to have a chance to complete the assignment. 
+
+---
+
+# Total Cost of an MTurk HIT
+
+Mechanical Turk charges a 40% fee for HITs which have more than 9 assignments. 
+
+Imagine you're running a study where you'll collect 100 responses for a five minute survey which you'll pay participants 70 cents to complete. The total cost would be 
+
+100 * $.70 * 1.4= $98
+
+The fee for HITs with fewer than 9 assignments is 20%
+The fee for bonuses is also 20%
 
 ---
 
@@ -92,10 +159,64 @@ Rule of Thumb: If a study is five minutes or less don't give a range.
 
 * Standard qualifications - 95% approval, Greater than 100 HITs Approved, Location is United States
 
+* Additional Qualifications - You can create your own qualifications and assign them to workers. This is very powerful. 
+ * You can screen out participants who have taken similar studies you have launched before
+ * You can create survey panels
+
 ---
 
-# Additional Qualifications
+class: center, middle
 
+# Some Final Words Warning
+## If you're using a completion code, double check it's working before launching your study!
+
+### Want to get 100 emails in five minutes? Launch a study without a completion code
+
+---
+
+class: center, middle
+
+# Being a Good Requester 
+
+---
+
+# The Basics of Being a Good Requester
+
+Approve work promptly. If someone entered the wrong completion code check to see if you have a completed survey response matching the ID. When using completion codes sometimes participants will accidentally submit the HIT with their MTurk ID as the completion code (The first survey question is usually "What is your MTurk ID?" and people copy and paste in the wrong window). This is fairly common - I'd estimate this happens once per 100-200 responses. 
+
+Respond to participant emails
+
+---
+
+# A Note on Blocks
+
+Blocks are serious business on Mechanical Turk. Amazon has an algorithm which blocks workers from using Mechanical Turk at all if they receive a certain number of blocks (approximately 3 strikes and you're out, though this increases as the number of approved HITs increases). 
+
+From a worker's perspective it is better to have a submission rejected than it is to have the submission accepted but then blocking them. 
+For example: Imagine you have a survey and a participant seems to have responded randomly. You might think "Well, they arguably completed the survey but I don't want them completing any surveys in the future for me" and want to accept their submission but block them.
+
+It is better to reject their submission and not block the worker. Workers are very aware of rejections because most requesters use a qualification based on the percentage of submissions of approved to screen workers . If you reject their work you don't have to worry about them working for you again (or at least they won't answer randomly again). 
+
+---
+
+# "Soft Block" Qualification - A Blocking Alternative
+
+If you really want to block someone I suggest creating a "Soft Block" qualification and assigning it to workers you don't want participating in your studies. 
+
+Reserve the "hard block" for repeat offenders and cheaters.
+
+---
+
+# Requester Best Practices
+
+Pay well
+
+Approve Work Promptly
+
+Don't be a jerk
+
+If it looks like a lot of people are cheating, you probably screwed up. In the past year of running the department's account I have collected ~150,000 survey responses. In that time I've had to block only three people for deliberate attempts to cheat. 
+Most incorrect codes are due to human error rather than deliberate attempts to cheat. 
 
 ---
 
@@ -143,39 +264,6 @@ If you are going to
 Do Not Do
 * Do not block workers to prevent them from retaking a survey. 
 
----
-
-# A Note on Blocks
-
-Blocks are serious business on Mechanical Turk. Amazon has an algorithm which blocks workers from using Mechanical Turk at all if they receive a certain number of blocks (approximately 3 strikes and you're out, though this increases as the number of approved HITs increases). 
-
-From a worker's perspective it is better to have a submission rejected than it is to have the submission accepted but then blocking them. 
-For example: Imagine you have a survey and a participant seems to have responded randomly. You might think "Well, they arguably completed the survey but I don't want them completing any surveys in the future for me" and want to accept their submission but block them.
-
-It is better to reject their submission and not block the worker. Workers are very aware of rejections because most requesters use a qualification based on the percentage of submissions of approved to screen workers . If you reject their work you don't have to worry about them working for you again (or at least they won't answer randomly again). 
-
----
-
-# "Soft Block" Qualification - A Blocking Alternative
-
-If you really want to block someone I suggest creating a "Soft Block" qualification and assigning it to workers you don't want participating in your studies. 
-
-Reserve the "hard block" for repeat offenders and cheaters.
-
----
-
-# Requester Best Practices
-
-Pay well
-
-Approve Work Promptly
-
-Don't be a jerk
-
-If it looks like a lot of people are cheating, you probably screwed up. In the past year of running the department's account I have collected ~150,000 survey responses. In that time I've had to block only three people for deliberate attempts to cheat. 
-Most incorrect codes are due to human error rather than deliberate attempts to cheat. 
-
----
 
 # Not all participants are nice
 
