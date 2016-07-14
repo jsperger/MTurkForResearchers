@@ -11,7 +11,9 @@ class: center, middle
 1. What is Mechanical Turk and why use it? 
 2. How to Post a Study on Mechanical Turk and Basic Considerations
 3. Being a Responsible Requester 
-4. Intermediate MTurking - Designing Studies for Mechanical Turk and the MTurk API
+4. Intermediate MTurking 
+ * Designing Studies for Mechanical Turk
+ * The Mechanical Turk API
 
 ---
 
@@ -105,11 +107,13 @@ class: center, middle
 
 .image-50[![Mturk Hit Description Example](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Description.png)]
 
-* Title - The title alone is what workers first see when looking for HITs; sentences instead of single words are the standard
- * Typically you should include the estimated time to complete in the title of the HIT
-* Description - Give more detail about the task. 
- * If your HIT contains the following you should mention it explicitly in the description: writing tasks, video watching, listening to audio
-* Keywords - keywords that workers can use to search for your HIT
+Title - The title alone is what workers first see when looking for HITs; sentences instead of single words are the standard
+* Typically you should include the estimated time to complete in the title of the HIT
+
+Description - Give more detail about the task. 
+* If your HIT contains the following you should mention it explicitly in the description: writing tasks, video watching, listening to audio
+
+Keywords - keywords that workers can use to search for your HIT
 
 ---
 
@@ -122,32 +126,30 @@ Providing accurate time estimates is one of the most important things you can do
 
 For short studies try to avoid giving a range of times. A "1-3 Minute Study" which pays fifteen cents could correspond to hourly wages of $9.00/hr, $4.50/hr, or $3.00/hr.
 
-Rule of Thumb: If a study is five minutes or less don't give a range. 
+* Rule of Thumb: If a study is five minutes or less don't give a range. 
 
 ---
 
 # Components of a HIT - The Set Up
 
 .image-50[![HIT Set Up](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Set%20Up.png)]
-* Reward per assignment
- * MTurk standard is 10 cents/minute which works out to $6.00/hour
- * We should do better - The Behavioral Lab pays participants $10/hr. The federal minimum wage is $7.25/hour . Paying less means you're more likely to get an economically vulnerbale segment of the population, and the costs are still significantly lower than other alternatives for collecting survey responses. 
- * You'll get responses more quickly with higher pay, and past studies have found that higher base pay also increases response quality
  
-* Time alloted per assignment - this is *not* how long your HIT takes to complete. This is how long a worker has to complete the HIT before Amazon automatically prevents the worker from submitting the HIT and allows another worker to have a chance to complete the assignment. 
+Time alloted per assignment - this is *not* how long your HIT takes to complete. This is how long a worker has to complete the HIT before Amazon automatically prevents the worker from submitting the HIT and allows another worker to have a chance to complete the assignment. 
 
 ---
 
 # Total Cost of an MTurk HIT
 
+Reward per assignment
+* MTurk standard is 10 cents/minute which works out to $6.00/hour
+* We should do better - The Behavioral Lab pays participants $10/hr. The federal minimum wage is $7.25/hour . Paying less means you're more likely to get an economically vulnerbale segment of the population, and the costs are still significantly lower than other alternatives for collecting survey responses. 
+* You'll get responses more quickly with higher pay, and past studies have found that higher base pay also increases response quality
+
 Mechanical Turk charges a 40% fee for HITs which have more than 9 assignments. 
+* The fee for HITs with fewer than 9 assignments is 20%
+* The fee for bonuses is also 20%
 
-Imagine you're running a study where you'll collect 100 responses for a five minute survey which you'll pay participants 70 cents to complete. The total cost would be 
-
-100 * $.70 * 1.4= $98
-
-The fee for HITs with fewer than 9 assignments is 20%
-The fee for bonuses is also 20%
+Imagine you're running a study where you'll collect 100 responses for a five minute survey which you'll pay participants 70 cents to complete. The total cost would be (100)($.70)(1.4) = $98. 
 
 ---
 
@@ -155,15 +157,31 @@ The fee for bonuses is also 20%
 
 .image-50[![Worker Requirements](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Worker%20Requirements.png)]
 
-* Master Workers - costs extra money and is basically useless provided you use sensible worker qualifications
+Master Workers - costs extra money and is basically useless provided you use sensible worker qualifications
 
-* Standard qualifications - 95% approval, Greater than 100 HITs Approved, Location is United States
+Standard qualifications - 95% approval, Greater than 100 HITs Approved, Location is United States
 
-* Additional Qualifications - You can create your own qualifications and assign them to workers. This is very powerful. 
- * You can screen out participants who have taken similar studies you have launched before
- * You can create survey panels
+Additional Qualifications - You can create your own qualifications and assign them to workers. This is very powerful. 
+* You can screen out participants who have taken similar studies you have launched before
+* You can create survey panels using qualifications
 
 ---
+
+# Options for Confirmation
+
+There are two main options for confirming that workers actually completed your survey
+
+Payment Code - At the end of the survey give participants a payment code to enter in the text box when they submit the HIT on MTurk
+* Easiest to set up
+* Errors - people accidentally submit the HIT before completing the survey or enter the wrong completion code (overall low error rate though)
+* You can combine this with bonuses to create incentivized studies
+
+External Question HIT - displays the survey automatically in a frame on within MTurk and automatically submits the HIT when they have completed the survey
+* Workers can't accidentally submit the HIT before completing it 
+* Can only be set up through the MTurk API 
+
+---
+
 
 class: center, middle
 
@@ -182,70 +200,98 @@ class: center, middle
 
 # The Basics of Being a Good Requester
 
-Approve work promptly. If someone entered the wrong completion code check to see if you have a completed survey response matching the ID. When using completion codes sometimes participants will accidentally submit the HIT with their MTurk ID as the completion code (The first survey question is usually "What is your MTurk ID?" and people copy and paste in the wrong window). This is fairly common - I'd estimate this happens once per 100-200 responses. 
+Pay fairly 
 
-Respond to participant emails
+Approve work promptly. If someone entered the wrong completion code check to see if you have a completed survey response matching the ID. 
+* When using completion codes sometimes participants will accidentally submit the HIT with their MTurk ID as the completion code (The first survey question is usually "What is your MTurk ID?" and people copy and paste in the wrong window). This is fairly common - I'd estimate this happens once per 100-200 responses. 
+
+Respond to messages from participants 
+
+Be considerate when designing surveys
+* Be cognizant of effort intensive tasks. A five minute survey which is actually five minutes of essay writing will make participants justifiably frustrated if you don't tell them up front
+* If your 
+
 
 ---
 
-# A Note on Blocks
+# Rejecting Work 
+
+Be clear when rejecting work. My boiler plate reason for rejection is "Your work has been rejected because your completion code was incorrect and there are no completed surveys matching your MTurk ID"
+* If you reject someone's work they will sometimes send you nasty emails. 
+* While purely anecdotal evidence, I've noticed that some of the workers who submit the worst work will most aggressively message you to try to shame you into reversing the rejection. While rare (and I mean very rare in my experience), be aware that some people do adopt this strategy
+
+---
+
+# Cheating
+
+If it looks like a lot of people are cheating, they probably aren't. In the past year of running the department's account I have collected ~150,000 survey responses. In that time I've had to block only three people for deliberate attempts to cheat.
+
+Most incorrect codes are due to human error rather than deliberate attempts to cheat. 
+
+If you're missing responses be sure to check the "Responses in Progress" section on Qualtrics. If you have the completion code on the last page of your study and the worker copy and pastes the code and exits the study window without clicking forward in Qualtrics then they'll be listed as a response in progress with e.g. 97% completion. 
+
+---
+
+# Blocks
 
 Blocks are serious business on Mechanical Turk. Amazon has an algorithm which blocks workers from using Mechanical Turk at all if they receive a certain number of blocks (approximately 3 strikes and you're out, though this increases as the number of approved HITs increases). 
-
-From a worker's perspective it is better to have a submission rejected than it is to have the submission accepted but then blocking them. 
-For example: Imagine you have a survey and a participant seems to have responded randomly. You might think "Well, they arguably completed the survey but I don't want them completing any surveys in the future for me" and want to accept their submission but block them.
 
 It is better to reject their submission and not block the worker. Workers are very aware of rejections because most requesters use a qualification based on the percentage of submissions of approved to screen workers . If you reject their work you don't have to worry about them working for you again (or at least they won't answer randomly again). 
 
 ---
 
-# "Soft Block" Qualification - A Blocking Alternative
+# "Soft Block" Qualification - An Alternative to Blocks
 
-If you really want to block someone I suggest creating a "Soft Block" qualification and assigning it to workers you don't want participating in your studies. 
+Rejecting work should be the first response
 
-Reserve the "hard block" for repeat offenders and cheaters.
+If you want to block someone I suggest creating a "Soft Block" qualification and assigning it to workers you don't want participating in your studies. 
 
----
-
-# Requester Best Practices
-
-Pay well
-
-Approve Work Promptly
-
-Don't be a jerk
-
-If it looks like a lot of people are cheating, you probably screwed up. In the past year of running the department's account I have collected ~150,000 survey responses. In that time I've had to block only three people for deliberate attempts to cheat. 
-Most incorrect codes are due to human error rather than deliberate attempts to cheat. 
+Reserve the "hard block" for cheaters or habitually poor and abusvie participants.
 
 ---
 
-# Designing Studies for Mechanical Turk
+class: center, middle
+
+# Intermediate MTurking
+### Designing Studies for Mechanical Turk
+### The Mechanical Turk API 
 
 
 ---
 
-# Options for Confirmation
+# Important Features for Making Full use of Mechanical Turk
 
-Payment Code
+Bonuses - Mechanical Turk gives requesters the ability to pay bonuses to participants. 
 
-External Question 
+Qualifications - Qualifications can allow you to create interesting sub-populations and do multi-part studies. 
+
+API - There is a  Mechanical Turk Requester API which can be used to automate certain tasks and gives access to some options not available through the graphical web requester interface. 
+Options for using the API are: Command Line Tools (not recommended), The MTurkR R package, the boto package for Python
+* Bonuses and Qualifications can only be granted one at a time through the GUI. To use these effectively requires using the API
 
 ---
 
 # Bonuses
 
-If bonuses are high and the task lends itself to Googling for an answer don't be surprised if people cheat.
+This is a great way to run experiments where participants are incentivized. The existing research has shown that MTurkers respond positively to incentives. 
+
+A simple way to implement incentives is to give participants different completion codes based on their performance. 
+
+Caveats:
+* If bonuses are high and the task lends itself to Googling for an answer don't be surprised if people cheat.
+* Some people don't like bonuses if the questions or tasks to get the bonus are too difficult 
 
 ---
 
-# Attention Checks
+# Attention & Comprehension Checks
 
-* Every participant on Mechanical Turk has seen the standard attention checks many, many times
+Some research has shown that with the standard quality qualifications on MTurk Attention checks aren't really necessary. 
+If you do use them, be aware that every participant on Mechanical Turk has seen the standard attention checks many, many times
 
 Comprehension Checks
-
- *Pre-register your analysis plan (shout out to Professors Simmons and Simonsohn)
+If you are going to screen out participants on Qualtrics make sure you give them instructions to return the HIT
+Make sure the 
+Because of the nature of Mechanical Turk it is very easy to tell yourself stories about what participants who didn't behave the way you wanted must've been thinking. You should pre-register your analysis plan including exclusions (shout out to Professors Simmons and Simonsohn)
 
 ---
 
@@ -259,35 +305,37 @@ Best Option
 Decent Option
 * Screen out MTurk IDs in Qualtrics
 
-If you are going to 
+If you are going to screen out participants on Qualtrics make sure you give them instructions to return the HIT
 
-Do Not Do
-* Do not block workers to prevent them from retaking a survey. 
-
-
-# Not all participants are nice
-
-If you reject someone's work they will sometimes send you nasty emails. 
-
-While purely anecdotal evidence, I've noticed that some of the workers who submit the worst work will most aggressively message you to try to shame you into reversing the rejection. 
+What Not To Do
+* Do *not* block workers to prevent them from retaking a survey. 
 
 ---
 
-# Amazon Terms of Service
+---
 
-* You can't collect Personally Identifying Information (PII) - this includes email addresses. 
+# Consider Interesting Uses of MTurk 
 
-* If your survey contains adult content it must be flagged. 
+Consider creative uses of Mechanical Turk instead of viewing it just as an inexpensive way to get high N studies
+
+Example:
+Siddharth Suri & Duncan J. Watts - "Cooperation and Contagion in Web-Based, Networked Public Goods Experiments"
+Suri and Watts paper ran 113 experiments where they varied network structure to study cooperation and contagion. This type of research wouldn't be feasible in a lab. 
+
 
 ---
 
-# Advanced Mechanical Turk
+# Final Take Aways
 
-* The Mechanical Turk Requester API
- * Command Line Tools
- * The MTurkR R package
- * The boto package for Python
- 
+
+Remember that participants review requesters. Maintaining a good reputation is important for getting high quality responses quickly 
+
+---
+
+class: center, middle
+
+# Additional Resources and References
+
 ---
 
 # Additional Resources
