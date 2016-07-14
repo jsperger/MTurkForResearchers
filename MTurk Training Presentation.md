@@ -81,7 +81,7 @@ class: center, middle
 
 # Components of a HIT - Description
 
-.image-50[![Mturk Hit Description Example](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Description.png)]
+.image-75[![Mturk Hit Description Example](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Description.png)]
 
 Title - The title alone is what workers first see when looking for HITs; sentences instead of single words are the standard
 * Typically you should include the estimated time to complete in the title of the HIT
@@ -108,7 +108,7 @@ For short studies try to avoid giving a range of times. A "1-3 Minute Study" whi
 
 # Components of a HIT - The Set Up
 
-.image-50[![HIT Set Up](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Set%20Up.png)]
+.image-75[![HIT Set Up](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/HIT%20Set%20Up.png)]
  
 Time alloted per assignment - this is *not* how long your HIT takes to complete. This is how long a worker has to complete the HIT before Amazon automatically prevents the worker from submitting the HIT and allows another worker to have a chance to complete the assignment. 
 
@@ -131,7 +131,7 @@ Imagine you're running a study where you'll collect 100 responses for a five min
 
 # Components of a HIT - Worker Requirements
 
-.image-50[![Worker Requirements](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Worker%20Requirements.png)]
+.image-75[![Worker Requirements](https://raw.githubusercontent.com/jsperger/MTurkForResearchers/master/Images/Worker%20Requirements.png)]
 
 Master Workers - costs extra money and is basically useless provided you use sensible worker qualifications
 
@@ -139,7 +139,6 @@ Standard qualifications - 95% approval, Greater than 100 HITs Approved, Location
 
 Additional Qualifications - You can create your own qualifications and assign them to workers. This is very powerful. 
 * You can screen out participants who have taken similar studies you have launched before
-* You can create survey panels using qualifications
 
 ---
 
